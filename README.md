@@ -71,6 +71,4 @@ Each event corresponds with a different LED and response:
 - **Develop Remote Monitoring Dashboard**
 - **Expand Compatibility with Existing Museum Security Systems**
 
----
-This README provides an overview of the **Integrated Security System** designed for museum security. Contributions and feedback are welcome!
 
