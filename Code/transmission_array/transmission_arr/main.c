@@ -1,53 +1,43 @@
-// transmission_arr.c
-// Created 2025-02-14
-// Authors: AD
-// Final Design Project
-// Timer Code
-
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#define F_CPU 16000000UL
-#include <util/delay.h>
 
 #define SINE_TABLE_SIZE 64
-#define TOP 250
+#define TOP_1k 50  // Max 8-bit timer value for smooth PWM
 
 // Precomputed sine wave lookup table (scaled to 8-bit range 0-255)
 const uint8_t sine_table[SINE_TABLE_SIZE] = {
-	128, 140, 153, 165, 177, 189, 200, 211,
-	221, 230, 239, 246, 252, 255, 258, 259,
-	258, 255, 252, 246, 239, 230, 221, 211,
-	200, 189, 177, 165, 153, 140, 128, 115,
-	102,  90,  78,  66,  55,  44,  34,  25,
-	16,   9,   3,   0,   0,   0,   3,   9,
-	16,  25,  34,  44,  55,  66,  78,  90,
-	102, 115
+	50, 54, 59, 64, 69, 73, 77, 81,
+	85, 88, 91, 94, 96, 97, 99, 99,
+	100, 99, 99, 97, 96, 94, 91, 88,
+	85, 81, 77, 73, 69, 64, 59, 54,
+	50, 45, 40, 35, 30, 26, 22, 18,
+	14, 11, 8, 5, 3, 2, 0, 0,
+	0, 0, 0, 2, 3, 5, 8, 11,
+	14, 18, 22, 26, 30, 35, 40, 45
 };
 
-double duty_cycle = 50;
+volatile uint8_t sine_index = 0;
 
 void setupTimer0() {
-	DDRD |= 1 << PORTD5;
-	TCCR0A = (1 << WGM00) | (1 << WGM01) | (1 << COM0B1);
-	OCR0A = TOP;
-	OCR0B = (duty_cycle/100)*TOP;
-	TCCR0B = (1 << WGM02) | (1 << CS00) | (1 << CS01);
-	TIMSK0 = (1 << TOIE0);
+	DDRD |= (1 << PORTD5); // PD5 sine output
+
+	TCCR0A = (1 << WGM00) | (1 << WGM01) | (1 << COM0B1); // fast PWM
+	TCCR0B = (1 << WGM02) | (1 << CS00) | (1 << CS01);   // prescaler 64
+	OCR0A = TOP_1k; // setting pwm period
+	OCR0B = sine_table[sine_index]; // setting initial duty cycle
+	TIMSK0 = (1 << TOIE0); // enabling timer0 interrupt
 }
 
-ISR(TIMER0_OVF_vect){
-	OCR0B = (duty_cycle/100)*TOP;
+ISR(TIMER0_OVF_vect) {
+	sine_index = (sine_index + 1) % SINE_TABLE_SIZE; // Loop sine wave index
+	OCR0B = (sine_table[sine_index] * TOP_1k) / 100; // Scale duty cycle correctly
 }
 
 int main() {
 	setupTimer0();
-	sei(); // Enable global interrupts
+	sei(); // turning on global interupts
 
 	while (1) {
-		duty_cycle++;
-		_delay_ms(10);
-		if(duty_cycle > 100){
-			duty_cycle = 0;
-		}
+		
 	}
 }
