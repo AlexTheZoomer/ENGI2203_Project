@@ -13,8 +13,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J1"
-				(at 0.635 5.08 0)
+			(property "Reference" "J"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -22,14 +22,14 @@
 				)
 			)
 			(property "Value" "Conn_01x02_Pin"
-				(at 0.635 2.54 0)
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -129,7 +129,7 @@
 						(type none)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_1"
@@ -147,7 +147,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 5.08 -2.54 180)
 					(length 3.81)
 					(name "Pin_2"
@@ -1836,18 +1836,107 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(junction
-		(at 87.63 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ef170c9-3b10-4dc1-a3ef-0e8d59000d92")
-	)
-	(junction
-		(at 87.63 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6857e52d-3404-403f-92bf-c4c3d0b7b491")
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 152.4 134.62)
@@ -1860,6 +1949,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d82c691b-a44d-442d-80c3-1ddfffedfa3a")
+	)
+	(junction
+		(at 123.19 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7e58c3f-5f09-46a4-92a6-7f8a370974b1")
 	)
 	(no_connect
 		(at 113.03 87.63)
@@ -1949,16 +2044,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 110.49) (xy 87.63 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03efd5d4-8558-44a7-b683-92fe032e3c29")
-	)
-	(wire
-		(pts
 			(xy 69.85 146.05) (xy 68.58 146.05)
 		)
 		(stroke
@@ -1966,16 +2051,6 @@
 			(type default)
 		)
 		(uuid "0ebf06db-2834-4298-a359-cdc335c329a2")
-	)
-	(wire
-		(pts
-			(xy 101.6 91.44) (xy 101.6 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12fbdaf3-f01b-4498-aabc-79eeb49a7214")
 	)
 	(wire
 		(pts
@@ -2039,16 +2114,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 91.44) (xy 87.63 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51852947-e972-459b-9f2f-9825638b44f6")
-	)
-	(wire
-		(pts
 			(xy 128.27 128.27) (xy 128.27 135.89)
 		)
 		(stroke
@@ -2066,16 +2131,6 @@
 			(type default)
 		)
 		(uuid "62d8c231-7efc-4098-ace5-5693b7c0fb37")
-	)
-	(wire
-		(pts
-			(xy 87.63 91.44) (xy 87.63 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "682d8170-4acc-4c07-abab-fff605743b7e")
 	)
 	(wire
 		(pts
@@ -2109,16 +2164,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 105.41) (xy 101.6 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7da031d0-34c9-48fa-b761-83aece0dd2a8")
-	)
-	(wire
-		(pts
 			(xy 69.85 142.24) (xy 69.85 146.05)
 		)
 		(stroke
@@ -2149,16 +2194,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 97.79) (xy 87.63 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6e38a76-eaf5-4872-b005-4b72c874ccbc")
-	)
-	(wire
-		(pts
 			(xy 184.15 115.57) (xy 172.72 115.57)
 		)
 		(stroke
@@ -2179,16 +2214,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 105.41) (xy 83.82 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdcb3b9b-adf2-47d0-9dff-8001e59bc85a")
-	)
-	(wire
-		(pts
 			(xy 152.4 134.62) (xy 172.72 134.62)
 		)
 		(stroke
@@ -2196,26 +2221,6 @@
 			(type default)
 		)
 		(uuid "d067e1a8-3049-49b0-b3c0-3552adf4ee04")
-	)
-	(wire
-		(pts
-			(xy 87.63 97.79) (xy 87.63 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8be5a21-74b7-4065-8865-38dc72c95a63")
-	)
-	(wire
-		(pts
-			(xy 83.82 110.49) (xy 87.63 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dcbbac41-4c0d-450f-afc6-0a9d8ccac67b")
 	)
 	(wire
 		(pts
@@ -2337,6 +2342,16 @@
 		)
 		(uuid "481c45f6-cbec-42f8-b66f-ca73ed79288b")
 	)
+	(label "LEDs"
+		(at 83.82 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a0cbc56-3426-4a23-b381-1fcbfa2cf50c")
+	)
 	(label "LEDc"
 		(at 86.36 128.27 270)
 		(effects
@@ -2356,6 +2371,16 @@
 			(justify left bottom)
 		)
 		(uuid "6747ba12-7911-4512-acda-18213c045f1c")
+	)
+	(label "LEDs"
+		(at 101.6 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a900a8a-d08a-4575-86b2-90867eef1950")
 	)
 	(label "LED1"
 		(at 66.04 120.65 180)
@@ -2396,6 +2421,16 @@
 			(justify right bottom)
 		)
 		(uuid "a3f42d62-5839-4ca2-819d-207e747b70a2")
+	)
+	(label "LEDs"
+		(at 83.82 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a4932805-f826-4f5b-80a5-11758fe2294a")
 	)
 	(label "LED4"
 		(at 113.03 100.33 180)
@@ -2447,6 +2482,16 @@
 		)
 		(uuid "ced62874-da4e-4417-9f4c-436dc73516bc")
 	)
+	(label "LEDs"
+		(at 101.6 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d043b20f-82b8-440f-8741-d9770b8c8e29")
+	)
 	(label "LED2"
 		(at 76.2 120.65 180)
 		(effects
@@ -2476,6 +2521,16 @@
 			(justify right bottom)
 		)
 		(uuid "e7a77f12-c707-4182-93a1-f03679fa1921")
+	)
+	(label "LEDs"
+		(at 87.63 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e8d753ab-eeb7-4bb2-aebe-d1b4c6924141")
 	)
 	(label "Photores"
 		(at 146.05 139.7 0)
@@ -3076,6 +3131,72 @@
 			(project ""
 				(path "/36cd22f2-71f9-449d-86c3-0d6a26eca8a0"
 					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 123.19 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7dd6c647-e602-47ac-b192-775b2c043708")
+		(property "Reference" "#FLG01"
+			(at 123.19 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 123.19 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 123.19 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "706bd720-e3d9-4b7a-af2e-e83f15ef6d34")
+		)
+		(instances
+			(project ""
+				(path "/36cd22f2-71f9-449d-86c3-0d6a26eca8a0"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
