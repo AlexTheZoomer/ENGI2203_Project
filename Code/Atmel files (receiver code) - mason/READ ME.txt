@@ -1,0 +1,3 @@
+Copy G5_MC_Studio_GccApp to Documents > Atmel Studio > folder "7.0" on my pc but may be different depending on version. Then launch from inside MCS.
+
+-Mason
