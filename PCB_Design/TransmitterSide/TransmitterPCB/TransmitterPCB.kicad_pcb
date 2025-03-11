@@ -121,6 +121,7 @@
 >>>>>>> parent of d44f973 (transmitter pcb)
 	(net 36 "unconnected-(U1-NC-Pad2)")
 	(net 37 "unconnected-(U1-~{SD}-Pad1)")
+<<<<<<< HEAD
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "1ff6c97c-8935-4c85-abcf-8964be20a484")
@@ -243,6 +244,8 @@
 		)
 		(embedded_fonts no)
 	)
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 	(footprint "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "3c04622d-304a-46c6-999c-327e16bc949f")
@@ -1185,107 +1188,6 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_3.2mm_M3"
-		(layer "F.Cu")
-		(uuid "803edebb-d53c-4b39-8fb9-66e51ed5f4f2")
-		(at 109.5 51.5)
-		(descr "Mounting Hole 3.2mm, no annular, M3")
-		(tags "mounting hole 3.2mm no annular m3")
-		(property "Reference" "H1"
-			(at 0 -4.2 0)
-			(layer "F.SilkS")
-			(uuid "ce736ce0-4000-4bcf-a96b-7b9fd85e2fdf")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 0 4.2 0)
-			(layer "F.Fab")
-			(uuid "f65cc8ed-5a60-4230-b1b2-336cf4d0b5da")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9d5b5820-c73c-4e05-9978-babf6c4aac7f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "087462fc-9be1-44c2-8065-aebeda8bd1c1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "MountingHole*")
-		(path "/565b0150-b310-46aa-90ea-2842f2d6e421")
-		(sheetname "/")
-		(sheetfile "TransmitterPCB.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 3.2 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(fill no)
-			(layer "Cmts.User")
-			(uuid "a667fa57-ec21-4b6b-9c79-9c93f708f25d")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 3.45 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "fba6da4f-f79a-448d-9491-69d8d20d4805")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "1a58eac5-833f-4adf-882b-01ced5871fc6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "" np_thru_hole circle
-			(at 0 0)
-			(size 3.2 3.2)
-			(drill 3.2)
-			(layers "*.Cu" "*.Mask")
-			(uuid "98a6520e-32a2-4c21-90b3-598c4b4dbd56")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"
 		(layer "F.Cu")
 		(uuid "89eaed0f-ac78-4eca-9e40-0371d0874b83")
@@ -1682,107 +1584,6 @@
 				(xyz 0 0 0)
 			)
 		)
-	)
-	(footprint "MountingHole:MountingHole_3.2mm_M3"
-		(layer "F.Cu")
-		(uuid "9a8de578-6697-4a6b-882d-cfb3566c784a")
-		(at 109.5 110.5)
-		(descr "Mounting Hole 3.2mm, no annular, M3")
-		(tags "mounting hole 3.2mm no annular m3")
-		(property "Reference" "H4"
-			(at 0 -4.2 0)
-			(layer "F.SilkS")
-			(uuid "c194a560-b903-49ad-a156-dc5653d1bad8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 0 4.2 0)
-			(layer "F.Fab")
-			(uuid "14dc4ac3-ed05-45e0-b33d-ead1bd536614")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "28dbd16a-b074-476b-87a9-2c713c36e25a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c3fdc3c5-4748-42d9-a28f-2ab3b784796e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "MountingHole*")
-		(path "/293bcd82-c831-4c6a-9292-f9c875097800")
-		(sheetname "/")
-		(sheetfile "TransmitterPCB.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 3.2 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(fill no)
-			(layer "Cmts.User")
-			(uuid "21ebdbd1-4a21-4941-b9bd-90dec387fae0")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 3.45 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "1f3ce035-2d2f-45a7-8055-0ac87e71d302")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "7bf37491-f32b-45a3-96a0-d558fdc9bee1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "" np_thru_hole circle
-			(at 0 0)
-			(size 3.2 3.2)
-			(drill 3.2)
-			(layers "*.Cu" "*.Mask")
-			(uuid "1ebaea54-8cc3-47c6-9e57-94fe0a5b87c6")
-		)
-		(embedded_fonts no)
 	)
 	(footprint "Module:Arduino_Nano"
 		(layer "F.Cu")
@@ -2967,6 +2768,7 @@
 			)
 		)
 	)
+<<<<<<< HEAD
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "de011a13-84a6-4826-8271-15782fa25e76")
@@ -3086,6 +2888,8 @@
 		)
 		(embedded_fonts no)
 	)
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "eef82e12-96a3-42d2-bdf0-b0671c90ba69")
@@ -3320,6 +3124,7 @@
 		)
 	)
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
@@ -3335,6 +3140,8 @@
 		(layer "Edge.Cuts")
 		(uuid "45fc6575-8be8-4e08-a225-e020fb87bed5")
 	)
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 	(segment
 		(start 138.561 66.939)
 		(end 138.561 73.621)
@@ -3525,6 +3332,7 @@
 		(uuid "c38d5a9c-7d4b-427f-a69d-c081c6cbd394")
 >>>>>>> parent of d44f973 (transmitter pcb)
 	)
+<<<<<<< HEAD
 	(zone
 		(net 4)
 		(net_name "GND")
@@ -4117,5 +3925,7 @@
 =======
 >>>>>>> Stashed changes
 	)
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 	(embedded_fonts no)
 )

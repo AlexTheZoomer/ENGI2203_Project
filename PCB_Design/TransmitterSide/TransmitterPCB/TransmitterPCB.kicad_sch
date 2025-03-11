@@ -1260,6 +1260,7 @@
 			(embedded_fonts no)
 		)
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
@@ -1347,6 +1348,8 @@
 			)
 			(embedded_fonts no)
 		)
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 		(symbol "democonnector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
@@ -2246,70 +2249,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 77.47 125.73 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "293bcd82-c831-4c6a-9292-f9c875097800")
-		(property "Reference" "H4"
-			(at 80.01 124.4599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 80.01 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 77.47 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 77.47 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 77.47 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "TransmitterPCB"
-				(path "/366b0502-75c2-4cf8-a05d-7922478712a9"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Amplifier_Audio:PAM8302AAY")
 		(at 95.25 86.36 0)
 		(unit 1)
@@ -2550,6 +2489,7 @@
 	)
 	(symbol
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
@@ -2709,6 +2649,8 @@
 		)
 	)
 	(symbol
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 		(lib_id "MCU_Module:Arduino_Nano_v3.x")
 		(at 146.05 83.82 0)
 		(unit 1)
@@ -2935,6 +2877,7 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
 		(lib_id "Mechanical:MountingHole")
 		(at 172.72 125.73 0)
 =======
@@ -3020,6 +2963,8 @@
 		)
 	)
 	(symbol
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 		(lib_id "Device:ElectromagneticActor")
 		(at 105.41 111.76 0)
 		(unit 1)
@@ -3438,6 +3383,7 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
 		(lib_id "Mechanical:MountingHole")
 		(at 173.99 41.91 0)
 		(unit 1)
@@ -3504,6 +3450,8 @@
 		)
 	)
 	(symbol
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 		(lib_id "power:GND")
 		(at 95.25 101.6 0)
 		(unit 1)
