@@ -2,9 +2,10 @@
 #include <avr/interrupt.h>
 
 #define SINE_TABLE_SIZE 64
-#define TOP_1k 50  // Max 8-bit timer value for smooth PWM
+#define TOP_200 50  // Max 8-bit timer value for smooth PWM
+#define TOP_100
 
-// Precomputed sine wave lookup table (scaled to 8-bit range 0-255)
+// Precomputed sine wave lookup table (scaled to 8-bit, duty percentage)
 const uint8_t sine_table[SINE_TABLE_SIZE] = {
 	50, 54, 59, 64, 69, 73, 77, 81,
 	85, 88, 91, 94, 96, 97, 99, 99,
@@ -23,14 +24,15 @@ void setupTimer0() {
 
 	TCCR0A = (1 << WGM00) | (1 << WGM01) | (1 << COM0B1); // fast PWM
 	TCCR0B = (1 << WGM02) | (1 << CS00) | (1 << CS01);   // prescaler 64
-	OCR0A = TOP_1k; // setting pwm period
+	OCR0A = TOP_200; // setting pwm period
 	OCR0B = sine_table[sine_index]; // setting initial duty cycle
 	TIMSK0 = (1 << TOIE0); // enabling timer0 interrupt
 }
 
+
 ISR(TIMER0_OVF_vect) {
 	sine_index = (sine_index + 1) % SINE_TABLE_SIZE; // Loop sine wave index
-	OCR0B = (sine_table[sine_index] * TOP_1k) / 100; // Scale duty cycle correctly
+	OCR0B = (sine_table[sine_index] * TOP_200) / 100; // Scale duty cycle correctly
 }
 
 int main() {

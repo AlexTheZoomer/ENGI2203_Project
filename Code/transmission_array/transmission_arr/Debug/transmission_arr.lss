@@ -117,7 +117,7 @@ void setupTimer0() {
 	TCCR0B = (1 << WGM02) | (1 << CS00) | (1 << CS01);   // prescaler 64
   b0:	8b e0       	ldi	r24, 0x0B	; 11
   b2:	85 bd       	out	0x25, r24	; 37
-	OCR0A = TOP_1k; // setting pwm period
+	OCR0A = TOP_200; // setting pwm period
   b4:	82 e3       	ldi	r24, 0x32	; 50
   b6:	87 bd       	out	0x27, r24	; 39
 	OCR0B = sine_table[sine_index]; // setting initial duty cycle
@@ -134,6 +134,7 @@ void setupTimer0() {
 
 000000ce <__vector_16>:
 }
+
 
 ISR(TIMER0_OVF_vect) {
   ce:	1f 92       	push	r1
@@ -164,7 +165,7 @@ ISR(TIMER0_OVF_vect) {
  100:	9f 6f       	ori	r25, 0xFF	; 255
  102:	01 96       	adiw	r24, 0x01	; 1
  104:	80 93 40 01 	sts	0x0140, r24	; 0x800140 <__data_end>
-	OCR0B = (sine_table[sine_index] * TOP_1k) / 100; // Scale duty cycle correctly
+	OCR0B = (sine_table[sine_index] * TOP_200) / 100; // Scale duty cycle correctly
  108:	e0 91 40 01 	lds	r30, 0x0140	; 0x800140 <__data_end>
  10c:	f0 e0       	ldi	r31, 0x00	; 0
  10e:	e0 50       	subi	r30, 0x00	; 0
