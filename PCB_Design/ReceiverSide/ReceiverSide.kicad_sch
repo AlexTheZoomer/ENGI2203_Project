@@ -2267,26 +2267,6 @@
 		)
 		(uuid "0895b7c4-507d-4642-8340-153fe1b13cda")
 	)
-	(label "Speaker"
-		(at 54.61 138.43 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "144f842b-97f6-4ab1-91c8-ffeb6b520657")
-	)
-	(label "Speaker"
-		(at 69.85 139.7 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1d86b35e-2745-449b-b13d-e8bd9e68a38d")
-	)
 	(label "LED2"
 		(at 113.03 95.25 180)
 		(effects
@@ -2307,16 +2287,6 @@
 		)
 		(uuid "24a3e379-0f0d-4d02-aa78-40ae9e13a468")
 	)
-	(label "D6"
-		(at 54.61 146.05 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2f0c314b-3ce6-40b1-8960-147fd3bab62e")
-	)
 	(label "LED1"
 		(at 113.03 92.71 180)
 		(effects
@@ -2336,6 +2306,16 @@
 			(justify right bottom)
 		)
 		(uuid "481c45f6-cbec-42f8-b66f-ca73ed79288b")
+	)
+	(label "D6"
+		(at 69.85 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5038140e-7a7f-47ec-a105-4cea8d5f48dd")
 	)
 	(label "LEDc"
 		(at 86.36 128.27 270)
@@ -2499,16 +2479,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 97.79 105.41 0)
+		(at 80.01 91.44 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "05967507-fce3-4124-8128-8d3162696afa")
-		(property "Reference" "D3"
-			(at 96.2025 99.06 0)
+		(property "Reference" "D2"
+			(at 80.518 94.742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2516,7 +2495,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 96.2025 101.6 0)
+			(at 80.772 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2524,7 +2503,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 97.79 105.41 0)
+			(at 80.01 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2533,7 +2512,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 105.41 0)
+			(at 80.01 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2542,7 +2521,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 97.79 105.41 0)
+			(at 80.01 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2551,7 +2530,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 97.79 105.41 0)
+			(at 80.01 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2568,7 +2547,7 @@
 		(instances
 			(project "ReceiverSide"
 				(path "/36cd22f2-71f9-449d-86c3-0d6a26eca8a0"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -2708,16 +2687,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 80.01 105.41 0)
+		(at 97.79 91.44 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2aec2efc-c43f-4a6a-8532-1c31c0caa1f1")
-		(property "Reference" "D4"
-			(at 78.4225 99.06 0)
+		(property "Reference" "D1"
+			(at 97.536 93.726 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2725,7 +2703,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 78.4225 101.6 0)
+			(at 98.552 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2733,7 +2711,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 80.01 105.41 0)
+			(at 97.79 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2742,7 +2720,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 80.01 105.41 0)
+			(at 97.79 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2751,7 +2729,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 80.01 105.41 0)
+			(at 97.79 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2760,7 +2738,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 80.01 105.41 0)
+			(at 97.79 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2777,7 +2755,7 @@
 		(instances
 			(project "ReceiverSide"
 				(path "/36cd22f2-71f9-449d-86c3-0d6a26eca8a0"
-					(reference "D4")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -2785,16 +2763,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 97.79 91.44 0)
+		(at 80.01 105.41 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "31639008-7327-492b-b7da-b79bbb025dae")
-		(property "Reference" "D1"
-			(at 96.2025 85.09 0)
+		(property "Reference" "D4"
+			(at 80.264 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2802,7 +2779,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 96.2025 87.63 0)
+			(at 80.518 101.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2810,7 +2787,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 97.79 91.44 0)
+			(at 80.01 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2819,7 +2796,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 91.44 0)
+			(at 80.01 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2828,7 +2805,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 97.79 91.44 0)
+			(at 80.01 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2837,7 +2814,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 97.79 91.44 0)
+			(at 80.01 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2854,7 +2831,7 @@
 		(instances
 			(project ""
 				(path "/36cd22f2-71f9-449d-86c3-0d6a26eca8a0"
-					(reference "D1")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -3497,76 +3474,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 54.61 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b382c6a6-4e4d-417e-8c3d-bc9e2758db26")
-		(property "Reference" "R6"
-			(at 57.15 140.9699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 57.15 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
-			(at 52.832 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 54.61 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8adcf9ab-6e94-4963-b175-a89bf04b1838")
-		)
-		(pin "1"
-			(uuid "e0eacc70-216e-4bb9-a9c9-84e3d413bfa7")
-		)
-		(instances
-			(project "ReceiverSide"
-				(path "/36cd22f2-71f9-449d-86c3-0d6a26eca8a0"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 172.72 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3637,16 +3544,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 80.01 91.44 0)
+		(at 97.79 105.41 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b4f58696-e1be-4942-8b4c-48b2227a7a47")
-		(property "Reference" "D2"
-			(at 78.4225 85.09 0)
+		(property "Reference" "D3"
+			(at 99.06 108.966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3654,7 +3560,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 78.4225 87.63 0)
+			(at 98.044 102.362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3662,7 +3568,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 80.01 91.44 0)
+			(at 97.79 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3671,7 +3577,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 80.01 91.44 0)
+			(at 97.79 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3680,7 +3586,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 80.01 91.44 0)
+			(at 97.79 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3689,7 +3595,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 80.01 91.44 0)
+			(at 97.79 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3706,7 +3612,7 @@
 		(instances
 			(project "ReceiverSide"
 				(path "/36cd22f2-71f9-449d-86c3-0d6a26eca8a0"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
