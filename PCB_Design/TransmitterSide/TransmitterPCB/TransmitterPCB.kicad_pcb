@@ -123,6 +123,7 @@
 	(net 37 "unconnected-(U1-~{SD}-Pad1)")
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "1ff6c97c-8935-4c85-abcf-8964be20a484")
@@ -245,6 +246,8 @@
 		)
 		(embedded_fonts no)
 	)
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 =======
 >>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 =======
@@ -2773,6 +2776,7 @@
 	)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "de011a13-84a6-4826-8271-15782fa25e76")
@@ -2892,6 +2896,8 @@
 		)
 		(embedded_fonts no)
 	)
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 =======
 >>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 =======
@@ -3132,6 +3138,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
@@ -3147,6 +3154,8 @@
 		(layer "Edge.Cuts")
 		(uuid "45fc6575-8be8-4e08-a225-e020fb87bed5")
 	)
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 =======
 >>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 =======
@@ -3341,6 +3350,7 @@
 		(uuid "c38d5a9c-7d4b-427f-a69d-c081c6cbd394")
 >>>>>>> parent of d44f973 (transmitter pcb)
 	)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	(zone
@@ -3935,6 +3945,8 @@
 =======
 >>>>>>> Stashed changes
 	)
+=======
+>>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 =======
 >>>>>>> parent of 720fec6 (Transmitter PCB finished... maybe)
 =======
