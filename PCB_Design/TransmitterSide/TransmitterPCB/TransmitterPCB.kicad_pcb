@@ -115,6 +115,7 @@
 	(net 34 "/Out+")
 	(net 35 "/Out-")
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	(net 36 "unconnected-(U1-NC-Pad2)")
 	(net 37 "unconnected-(U1-~{SD}-Pad1)")
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
@@ -127,6 +128,19 @@
 			(at 0 -4.2 0)
 			(layer "F.SilkS")
 			(uuid "d0241365-9def-40a7-bece-3b9630dbe11b")
+=======
+	(net 36 "unconnected-(J2-Pin_3-Pad3)")
+	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+		(layer "F.Cu")
+		(uuid "013e4e08-d784-402e-9779-5567705748ff")
+		(at 155.5 126)
+		(descr "Through hole straight socket strip, 1x02, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
+		(tags "Through hole socket strip THT 1x02 2.54mm single row")
+		(property "Reference" "Power"
+			(at 4 0 0)
+			(layer "F.SilkS")
+			(uuid "a056ffb2-af6c-4842-b23a-c4b2b02077dd")
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1 1)
@@ -134,10 +148,17 @@
 				)
 			)
 		)
+<<<<<<< Updated upstream
 		(property "Value" "MountingHole"
 			(at 0 4.2 0)
 			(layer "F.Fab")
 			(uuid "1c4a372f-d24f-4a44-bd07-0eeda73eca15")
+=======
+		(property "Value" "Conn_01x02_Pin"
+			(at 0 5.31 0)
+			(layer "F.Fab")
+			(uuid "0683c8f5-06eb-45b2-b28b-5d3f1f6d9c2e")
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1 1)
@@ -150,6 +171,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
+<<<<<<< Updated upstream
 			(uuid "e64c40f6-d121-4c3b-bfd8-eaff29c160ba")
 			(effects
 				(font
@@ -255,6 +277,8 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
+=======
+>>>>>>> Stashed changes
 			(uuid "7251c45a-7860-4ff1-b660-f489d4a7729d")
 			(effects
 				(font
@@ -479,6 +503,7 @@
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 		(layer "F.Cu")
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 		(uuid "50a9380f-94c3-46ee-8039-ab12c567e1c8")
 		(at 124 59 180)
@@ -2716,6 +2741,16 @@
 			(at 0 -4.2 0)
 			(layer "F.SilkS")
 			(uuid "15e2e7fb-520f-4f81-a5e3-f96329d14dbd")
+=======
+		(uuid "096f7292-0ee1-4ba7-9408-d80d40d0f8f3")
+		(at 128.5 106 -90)
+		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
+		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
+		(property "Reference" "R1"
+			(at 2.54 -1.92 90)
+			(layer "F.SilkS")
+			(uuid "188047dd-e04c-4acd-9086-9a4bc5a8e6a4")
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1 1)
@@ -2723,10 +2758,17 @@
 				)
 			)
 		)
+<<<<<<< Updated upstream
 		(property "Value" "MountingHole"
 			(at 0 4.2 0)
 			(layer "F.Fab")
 			(uuid "049c0df0-b146-44a3-b323-b6a0df9de3fd")
+=======
+		(property "Value" "R"
+			(at 2.54 1.92 90)
+			(layer "F.Fab")
+			(uuid "3e22b492-3dee-4182-bef2-d49d8c6cd54d")
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1 1)
@@ -2735,6 +2777,7 @@
 			)
 		)
 		(property "Datasheet" ""
+<<<<<<< Updated upstream
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2844,6 +2887,12 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
+=======
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+>>>>>>> Stashed changes
 			(uuid "89ed757e-4785-422d-a084-a775239071d0")
 			(effects
 				(font
@@ -3035,6 +3084,7 @@
 		)
 	)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	(gr_rect
 		(start 102 44.5)
 		(end 165 117)
@@ -3050,6 +3100,9 @@
 		(start 138.561 66.939)
 		(end 138.561 73.621)
 		(width 0.2)
+=======
+	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+>>>>>>> Stashed changes
 =======
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 >>>>>>> Stashed changes
@@ -5619,6 +5672,7 @@
 		(layer "F.Cu")
 		(net 35)
 		(uuid "f0709973-279c-47e8-afd7-694559903811")
+<<<<<<< Updated upstream
 	)
 	(zone
 		(net 4)
@@ -6209,6 +6263,8 @@
 				(xy 117.516754 49.510356) (xy 117.566363 49.5) (xy 144.929171 49.5)
 			)
 		)
+=======
+>>>>>>> Stashed changes
 	)
 	(embedded_fonts no)
 )

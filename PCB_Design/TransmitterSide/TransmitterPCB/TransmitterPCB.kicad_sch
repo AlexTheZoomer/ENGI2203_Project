@@ -1652,6 +1652,7 @@
 			(embedded_fonts no)
 		)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
@@ -1898,6 +1899,8 @@
 			)
 			(embedded_fonts no)
 		)
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 		(symbol "power:+5V"
@@ -2717,6 +2720,7 @@
 			)
 		)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		(property "Datasheet" ""
 			(at 95.25 76.2 0)
 			(effects
@@ -2929,6 +2933,10 @@
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 169.672 85.09 90)
+=======
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 124.46 54.61 0)
+>>>>>>> Stashed changes
 =======
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
 			(at 124.46 54.61 0)
@@ -3257,6 +3265,7 @@
 	)
 	(symbol
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		(lib_id "Mechanical:MountingHole")
 		(at 76.2 41.91 0)
 		(unit 1)
@@ -3287,6 +3296,8 @@
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 76.2 41.91 0)
 =======
+=======
+>>>>>>> Stashed changes
 		(lib_id "power:GND")
 		(at 132.08 58.42 0)
 		(unit 1)
@@ -3298,6 +3309,9 @@
 		(uuid "5752f0f8-61b2-46dd-a717-9e835d357fd8")
 		(property "Reference" "#PWR01"
 			(at 132.08 64.77 0)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 			(effects
 				(font
@@ -3307,9 +3321,12 @@
 			)
 		)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		(property "Datasheet" "~"
 			(at 76.2 41.91 0)
 =======
+=======
+>>>>>>> Stashed changes
 		(property "Value" "GND"
 			(at 132.08 63.5 0)
 			(effects
@@ -3320,6 +3337,9 @@
 		)
 		(property "Footprint" ""
 			(at 132.08 58.42 0)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 			(effects
 				(font
@@ -3329,8 +3349,13 @@
 			)
 		)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		(property "Description" "Mounting Hole without connection"
 			(at 76.2 41.91 0)
+=======
+		(property "Datasheet" ""
+			(at 132.08 58.42 0)
+>>>>>>> Stashed changes
 =======
 		(property "Datasheet" ""
 			(at 132.08 58.42 0)
@@ -3343,11 +3368,14 @@
 			)
 		)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		(instances
 			(project ""
 				(path "/366b0502-75c2-4cf8-a05d-7922478712a9"
 					(reference "H1")
 =======
+=======
+>>>>>>> Stashed changes
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 132.08 58.42 0)
 			(effects
@@ -3364,6 +3392,9 @@
 			(project ""
 				(path "/366b0502-75c2-4cf8-a05d-7922478712a9"
 					(reference "#PWR01")
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 					(unit 1)
 				)
@@ -3527,6 +3558,7 @@
 	)
 	(symbol
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		(lib_id "power:GND")
 		(at 130.81 59.69 0)
 		(unit 1)
@@ -3595,15 +3627,25 @@
 	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 172.72 125.73 0)
+=======
+		(lib_id "Device:ElectromagneticActor")
+		(at 189.23 76.2 0)
+>>>>>>> Stashed changes
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
+<<<<<<< Updated upstream
 		(uuid "713aea2d-82fa-4e02-a609-db0a1822b9df")
 		(property "Reference" "H3"
 			(at 175.26 124.4599 0)
+=======
+		(uuid "81cefcaa-b905-4480-831e-e4b0244859da")
+		(property "Reference" "L1"
+			(at 193.04 73.6599 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3611,8 +3653,13 @@
 				(justify left)
 			)
 		)
+<<<<<<< Updated upstream
 		(property "Value" "MountingHole"
 			(at 175.26 126.9999 0)
+=======
+		(property "Value" "ElectromagneticActor"
+			(at 193.04 76.1999 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3620,8 +3667,13 @@
 				(justify left)
 			)
 		)
+<<<<<<< Updated upstream
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 172.72 125.73 0)
+=======
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 188.595 73.66 90)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3630,6 +3682,7 @@
 			)
 		)
 		(property "Datasheet" "~"
+<<<<<<< Updated upstream
 			(at 172.72 125.73 0)
 			(effects
 				(font
@@ -3696,6 +3749,8 @@
 			)
 		)
 		(property "Datasheet" "~"
+=======
+>>>>>>> Stashed changes
 			(at 188.595 73.66 90)
 			(effects
 				(font
@@ -4192,6 +4247,7 @@
 			(project ""
 				(path "/366b0502-75c2-4cf8-a05d-7922478712a9"
 					(reference "#FLG01")
+<<<<<<< Updated upstream
 					(unit 1)
 				)
 			)
@@ -4256,6 +4312,8 @@
 			(project "TransmitterPCB"
 				(path "/366b0502-75c2-4cf8-a05d-7922478712a9"
 					(reference "H2")
+=======
+>>>>>>> Stashed changes
 					(unit 1)
 				)
 			)
