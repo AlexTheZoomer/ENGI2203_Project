@@ -227,7 +227,7 @@
   "erc": {
     "erc_exclusions": [
       [
-        "lib_symbol_mismatch|1028700|711200|8174e734-b258-4dcd-9e8f-ebf1fe7d81e1|00000000-0000-0000-0000-000000000000|||",
+        "lib_symbol_mismatch|1257300|546100|e1afbc6c-9bfc-4c40-b1f1-e10b683128f0|00000000-0000-0000-0000-000000000000|||",
         ""
       ]
     ],
@@ -449,13 +449,12 @@
       "wire_dangling": "error"
     }
   },
-  "legacy": [],
   "libraries": {
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ReceiverSide.kicad_pro",
+    "filename": "TransmitterPCB.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -586,14 +585,14 @@
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
-      "label_size_ratio": 0.25,
+      "label_size_ratio": 0.375,
       "operating_point_overlay_i_precision": 3,
       "operating_point_overlay_i_range": "~A",
       "operating_point_overlay_v_precision": 3,
       "operating_point_overlay_v_range": "~V",
       "overbar_offset_ratio": 1.23,
-      "pin_symbol_size": 0.0,
-      "text_offset_ratio": 0.08
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
     },
     "legacy_lib_dir": "",
     "legacy_lib_list": [],
@@ -615,7 +614,7 @@
   },
   "sheets": [
     [
-      "36cd22f2-71f9-449d-86c3-0d6a26eca8a0",
+      "366b0502-75c2-4cf8-a05d-7922478712a9",
       "Root"
     ]
   ],

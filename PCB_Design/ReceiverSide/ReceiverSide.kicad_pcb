@@ -3107,7 +3107,7 @@
 	(footprint "Halleffect:LPG3_TEX"
 		(layer "F.Cu")
 		(uuid "d0ba5805-cc53-4a0a-b485-70855c8d9225")
-		(at 146.96 74)
+		(at 146.96 72.5)
 		(tags "DRV5053CAQLPGM ")
 		(property "Reference" "U1"
 			(at 1.27 0 0)
