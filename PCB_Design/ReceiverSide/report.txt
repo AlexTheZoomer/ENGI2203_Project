@@ -1,0 +1,36 @@
+Info: Processing symbol 'A1:Module:Arduino_Nano'.
+Info: Processing symbol 'ACC1:Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal'.
+Info: Processing symbol 'ACC2:Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal'.
+Info: Processing symbol 'ACC3:Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal'.
+Info: Processing symbol 'R5:Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal'.
+Info: Processing symbol 'ACC4:Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal'.
+Info: Processing symbol 'Speaker1:Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'ACC5:Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal'.
+Info: Processing symbol 'AUX-PWR1:Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'D1:LED_THT:LED_D3.0mm'.
+Info: Processing symbol 'D2:LED_THT:LED_D3.0mm'.
+Info: Processing symbol 'D3:LED_THT:LED_D3.0mm'.
+Info: Processing symbol 'D4:LED_THT:LED_D3.0mm'.
+Info: Processing symbol 'H1:MountingHole:MountingHole_2.7mm'.
+Info: Processing symbol 'H2:MountingHole:MountingHole_2.7mm'.
+Info: Processing symbol 'H3:MountingHole:MountingHole_2.7mm'.
+Info: Processing symbol 'H4:MountingHole:MountingHole_2.7mm'.
+Info: Processing symbol 'HALL-IN1:Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical'.
+Info: Processing symbol 'Hall1:Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'Op-Amp1:MCP6281_E_P:DIP787W46P254L927H533Q8'.
+Info: Processing symbol 'OP-IN1:Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'OP-OUT1:Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical'.
+Info: Processing symbol 'OP-PWR-IN1:Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'OP-PWR1:Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'PR1:Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal'.
+Info: Processing symbol 'R1:Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal'.
+Info: Processing symbol 'R2:Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal'.
+Info: Processing symbol 'R3:Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal'.
+Info: Processing symbol 'R4:Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal'.
+Reconnect ACC3 pin 2 from Net-(OP-IN1-Pin_2) to GND.
+Reconnect ACC4 pin 1 from Net-(OP-IN1-Pin_1) to GND.
+Reconnect OP-IN1 pin 2 from Net-(OP-IN1-Pin_2) to GND.
+Reconnect OP-IN1 pin 1 from Net-(OP-IN1-Pin_1) to GND.
+
+
+Info: Total warnings: 0, errors: 0.
