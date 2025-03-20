@@ -494,7 +494,7 @@
       "plot": "ENGI2203_T5_Receiver_PCB_Export/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "ReceiverSide.step",
       "svg": "",
       "vrml": ""
     },
