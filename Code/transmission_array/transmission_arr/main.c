@@ -9,6 +9,7 @@
 #define TOP_low 35 // Frequency for transmitting '0' @ 107Hz, 2.04V-pp
 #define TOP_default 5 // Default Frequency @ 600Hz, 400mV-pp
 
+// Precomputed sine wave lookup table (scaled to 8-bit, duty percentage)
 
 const uint8_t sine_table[SINE_TABLE_SIZE] = {
 	50, 54, 59, 64, 69, 73, 77, 81,
@@ -56,7 +57,7 @@ ISR(TIMER1_COMPA_vect) {
 			OCR0A = current_bit ? TOP_high : TOP_low;
 			bit_index++;
 			} else {
-			transmission_active = 0; // Stop transmission
+			transmission_active = 0; // done transmission, reset to default transmission frequency
 			OCR0A = TOP_default;
 		}
 	}
@@ -70,12 +71,12 @@ void startTransmission() {
 int main() {
 	setupTimer0();
 	setupTimer1();
-	sei(); // Enable global interrupts
+	sei(); 
 	
 	_delay_ms(500);
 	startTransmission();
 
 	while (1) {
-		// Main loop does nothing, transmission handled by interrupts
+		// :( photoresistor code will go here 
 	}
 }

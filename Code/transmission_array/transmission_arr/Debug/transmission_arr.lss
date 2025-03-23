@@ -251,7 +251,7 @@ ISR(TIMER1_COMPA_vect) {
  1a0:	80 93 52 01 	sts	0x0152, r24	; 0x800152 <bit_index>
  1a4:	04 c0       	rjmp	.+8      	; 0x1ae <__vector_11+0x54>
 			} else {
-			transmission_active = 0; // Stop transmission
+			transmission_active = 0; // done transmission, reset to default transmission frequency
  1a6:	10 92 50 01 	sts	0x0150, r1	; 0x800150 <__data_end>
 			OCR0A = TOP_default;
  1aa:	85 e0       	ldi	r24, 0x05	; 5
@@ -286,7 +286,7 @@ int main() {
  1ca:	0e 94 53 00 	call	0xa6	; 0xa6 <setupTimer0>
 	setupTimer1();
  1ce:	0e 94 67 00 	call	0xce	; 0xce <setupTimer1>
-	sei(); // Enable global interrupts
+	sei(); 
  1d2:	78 94       	sei
 	#else
 		//round up by default
