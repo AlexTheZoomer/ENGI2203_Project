@@ -41,7 +41,7 @@ void setupTimer0() {
 void setupTimer1() {
 	// bit transmission timing 
 	TCCR1B = (1 << WGM12) | (1 << CS12) | (1 << CS10); 
-	OCR1A = 5000; // transmission interval
+	OCR1A = 20000; // transmission interval
 	TIMSK1 = (1 << OCIE1A); 
 }
 
@@ -73,7 +73,7 @@ int main() {
 	setupTimer1();
 	sei(); 
 	
-	_delay_ms(500);
+	_delay_ms(1);
 	startTransmission();
 
 	while (1) {
